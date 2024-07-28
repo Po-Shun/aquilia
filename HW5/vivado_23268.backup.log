@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Jan 13 21:31:01 2022
+# Process ID: 23268
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW5
+# Command line: vivado.exe -mode batch -source build.tcl
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW5\vivado.jou
+#-----------------------------------------------------------
+source build.tcl
+# set origin_dir "."
+# set proj_name "aquila_mpd"
+# variable script_file
+# set script_file "${proj_name}.tcl"
+# create_project ${proj_name} ./${proj_name} -part xc7a35ticsg324-1L
+# set obj [current_project]
+# set_property -name "board_part" -value "digilentinc.com:arty-a7-35:part0:1.0" -objects $obj
+# set_property -name "default_lib" -value "xil_defaultlib" -objects $obj
+# set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
+# set_property -name "simulator_language" -value "Mixed" -objects $obj
+# set_property -name "xpm_libraries" -value "XPM_CDC XPM_MEMORY" -objects $obj
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# set files [list \
+#  [file normalize "$origin_dir/src/core_rtl/alu.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/aquila_top.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/atomic_unit.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/bcu.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/bpu.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/clint.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/core_top.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/csr_file.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/dcache.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/decode.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/distri_ram.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/execute.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/fetch.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/forwarding_unit.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/icache.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/memory.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/muldiv.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/pipeline_control.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/program_counter.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/reg_file.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/sram.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/sram_dp.v" ]\
+#  [file normalize "$origin_dir/src/uart.v" ]\
+#  [file normalize "$origin_dir/src/core_rtl/writeback.v" ]\
+#  [file normalize "$origin_dir/src/soc_top.v" ]\
+#  [file normalize "$origin_dir/src/mem/bootrom.mem" ]\
+# ]
+# set imported_files [import_files -fileset sources_1 $files]
+# set file "mem/bootrom.mem"
+# set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+# set_property -name "file_type" -value "Memory File" -objects $file_obj
+# set obj [get_filesets sources_1]
+# set_property -name "top" -value "soc_top" -objects $obj
+# create_ip -name clk_wiz -vendor xilinx.com -library ip -module_name clk_wiz_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+# set_property -dict [list \
+#     CONFIG.PRIM_IN_FREQ {100.000} \
+#     CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.000} \
+#     CONFIG.USE_RESET {false} \
+#     CONFIG.USE_LOCKED {false}] [get_ips clk_wiz_0]
+# generate_target all [get_files ${proj_name}/${proj_name}.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+# if {[string equal [get_filesets -quiet constrs_1] ""]} {
+#   create_fileset -constrset constrs_1
+# }
+# set obj [get_filesets constrs_1]
+# set file "[file normalize "$origin_dir/src/xdc/arty.xdc"]"
+# set file_imported [import_files -fileset constrs_1 [list $file]]
+# set file "arty.xdc"
+# set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+# set_property -name "file_type" -value "XDC" -objects $file_obj
+# set obj [get_filesets constrs_1]
+# set_property -name "target_constrs_file" -value "[get_files */arty.xdc]" -objects $obj
+# set_property -name "target_ucf" -value "[get_files */arty.xdc]" -objects $obj
+# if {[string equal [get_filesets -quiet sim_1] ""]} {
+#   create_fileset -simset sim_1
+# }
+# set obj [get_filesets sim_1]
+# set files [list \
+#  [file normalize "$origin_dir/src/sim/aquila_tb.v" ]\
+# ]
+# set imported_files [import_files -fileset sim_1 $files]
+# set obj [get_filesets sim_1]
+# set_property -name "top" -value "aquila_tb" -objects $obj
+# set_property -name "top_lib" -value "xil_defaultlib" -objects $obj
+# puts "INFO: Project created:${proj_name}"
+INFO: Project created:aquila_mpd
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 13 21:31:12 2022...

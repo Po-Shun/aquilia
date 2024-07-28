@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec 15 16:13:08 2021
+# Process ID: 15128
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13216 C:\Users\a609071103.cs07\Documents\micro processor\HW4\aquila_sd\aquila_sd\aquila_sd\aquila_sd.xpr
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1124.840 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 01:17:04 2021] Launched async_fifo_addr_synth_1, mig_7series_0_synth_1, async_fifo_data_synth_1, async_fifo_signal_synth_1, clk_wiz_0_synth_1, axi_quad_spi_0_synth_1, synth_1...
+Run output will be captured here:
+async_fifo_addr_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/async_fifo_addr_synth_1/runme.log
+mig_7series_0_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/mig_7series_0_synth_1/runme.log
+async_fifo_data_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/async_fifo_data_synth_1/runme.log
+async_fifo_signal_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/async_fifo_signal_synth_1/runme.log
+clk_wiz_0_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/clk_wiz_0_synth_1/runme.log
+axi_quad_spi_0_synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/axi_quad_spi_0_synth_1/runme.log
+synth_1: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 01:17:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 01:33:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 01:33:42 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 01:35:36 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 01:35:36 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 01:36:36 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 01:36:36 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.583 . Memory (MB): peak = 1351.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1922 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2136.340 ; gain = 35.430
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2136.340 ; gain = 35.430
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2136.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 325 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 196 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 12 instances
+  RAM32X1S => RAM32X1S (RAMS32): 92 instances
+  SRLC32E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2232.109 ; gain = 1107.270
+open_report: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 2348.031 ; gain = 59.395
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 27 2021-01:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2021 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2788.691 ; gain = 0.297
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 4498.379 ; gain = 1709.688
+set_property PROGRAM.FILE {C:\Users\a609071103.cs07\Documents\micro processor\HW4\aquila_sd\aquila_sd\soc_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 02:17:12 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 02:17:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 03:28:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 03:28:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 03:39:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 03:39:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 03:50:04 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 03:50:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Dec 16 04:02:40 2021] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/synth_1/runme.log
+[Thu Dec 16 04:02:40 2021] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Desktop/SD/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec  9 12:51:41 2021
+# Process ID: 19136
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21964 C:\Users\a609071103.cs07\Documents\micro processor\HW4\aquila_sd\aquila_sd\aquila_sd\aquila_sd.xpr
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/aquila_sd/aquila_sd.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

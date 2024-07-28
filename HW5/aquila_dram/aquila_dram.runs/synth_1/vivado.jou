@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan 16 19:03:10 2022
+# Process ID: 16896
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/synth_1
+# Command line: vivado.exe -log soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_top.tcl
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/synth_1/soc_top.vds
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc_top.tcl -notrace

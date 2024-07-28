@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan 16 18:54:44 2022
+# Process ID: 2568
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20980 C:\Users\a609071103.cs07\Documents\micro processor\HW5\aquila_dram\aquila_dram.xpr
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1442.938 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'Clock_Generator'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'MIG'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.dcp' for cell 'synchronizer/DMEM_addr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.dcp' for cell 'synchronizer/DMEM_done__0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.dcp' for cell 'synchronizer/DMEM_rd_data'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.683 . Memory (MB): peak = 1442.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Finished Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc:60]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+INFO: [Project 1-1714] 20 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2073.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 236 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 196 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:28 . Memory (MB): peak = 2087.953 ; gain = 645.016
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken_i*" ]
+WARNING: [Vivado 12-507] No nets matched '*irq_taken_i*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*pc*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*pc_i*" ]
+WARNING: [Vivado 12-507] No nets matched '*pc_i*'.
+WARNING: [Coretcl 2-1122] No objects found.
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Aquila_SoC/RISCV_CORE0/dec_pc[0]} {Aquila_SoC/RISCV_CORE0/dec_pc[1]} {Aquila_SoC/RISCV_CORE0/dec_pc[2]} {Aquila_SoC/RISCV_CORE0/dec_pc[3]} {Aquila_SoC/RISCV_CORE0/dec_pc[4]} {Aquila_SoC/RISCV_CORE0/dec_pc[5]} {Aquila_SoC/RISCV_CORE0/dec_pc[6]} {Aquila_SoC/RISCV_CORE0/dec_pc[7]} {Aquila_SoC/RISCV_CORE0/dec_pc[8]} {Aquila_SoC/RISCV_CORE0/dec_pc[9]} {Aquila_SoC/RISCV_CORE0/dec_pc[10]} {Aquila_SoC/RISCV_CORE0/dec_pc[11]} {Aquila_SoC/RISCV_CORE0/dec_pc[12]} {Aquila_SoC/RISCV_CORE0/dec_pc[13]} {Aquila_SoC/RISCV_CORE0/dec_pc[14]} {Aquila_SoC/RISCV_CORE0/dec_pc[15]} {Aquila_SoC/RISCV_CORE0/dec_pc[16]} {Aquila_SoC/RISCV_CORE0/dec_pc[17]} {Aquila_SoC/RISCV_CORE0/dec_pc[18]} {Aquila_SoC/RISCV_CORE0/dec_pc[19]} {Aquila_SoC/RISCV_CORE0/dec_pc[20]} {Aquila_SoC/RISCV_CORE0/dec_pc[21]} {Aquila_SoC/RISCV_CORE0/dec_pc[22]} {Aquila_SoC/RISCV_CORE0/dec_pc[23]} {Aquila_SoC/RISCV_CORE0/dec_pc[24]} {Aquila_SoC/RISCV_CORE0/dec_pc[25]} {Aquila_SoC/RISCV_CORE0/dec_pc[26]} {Aquila_SoC/RISCV_CORE0/dec_pc[27]} {Aquila_SoC/RISCV_CORE0/dec_pc[28]} {Aquila_SoC/RISCV_CORE0/dec_pc[29]} {Aquila_SoC/RISCV_CORE0/dec_pc[30]} {Aquila_SoC/RISCV_CORE0/dec_pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list Aquila_SoC/RISCV_CORE0/irq_taken ]]
+save_constraints
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.619 . Memory (MB): peak = 2111.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2503 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2192.695 ; gain = 8.852
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2192.695 ; gain = 8.852
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2192.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 233 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 196 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 12 instances
+  SRLC32E => SRL16E: 1 instance 
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2270.891 ; gain = 158.918
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35ticsg324-1L
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'Clock_Generator'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'MIG'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.dcp' for cell 'synchronizer/DMEM_addr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.dcp' for cell 'synchronizer/DMEM_done__0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.dcp' for cell 'synchronizer/DMEM_rd_data'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.616 . Memory (MB): peak = 2400.773 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Finished Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc:60]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+INFO: [Project 1-1714] 20 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2645.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 236 instances were transformed.
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 5 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 196 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 16 instances
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2684.523 ; gain = 364.957
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Aquila_SoC/RISCV_CORE0/dec_pc[0]} {Aquila_SoC/RISCV_CORE0/dec_pc[1]} {Aquila_SoC/RISCV_CORE0/dec_pc[2]} {Aquila_SoC/RISCV_CORE0/dec_pc[3]} {Aquila_SoC/RISCV_CORE0/dec_pc[4]} {Aquila_SoC/RISCV_CORE0/dec_pc[5]} {Aquila_SoC/RISCV_CORE0/dec_pc[6]} {Aquila_SoC/RISCV_CORE0/dec_pc[7]} {Aquila_SoC/RISCV_CORE0/dec_pc[8]} {Aquila_SoC/RISCV_CORE0/dec_pc[9]} {Aquila_SoC/RISCV_CORE0/dec_pc[10]} {Aquila_SoC/RISCV_CORE0/dec_pc[11]} {Aquila_SoC/RISCV_CORE0/dec_pc[12]} {Aquila_SoC/RISCV_CORE0/dec_pc[13]} {Aquila_SoC/RISCV_CORE0/dec_pc[14]} {Aquila_SoC/RISCV_CORE0/dec_pc[15]} {Aquila_SoC/RISCV_CORE0/dec_pc[16]} {Aquila_SoC/RISCV_CORE0/dec_pc[17]} {Aquila_SoC/RISCV_CORE0/dec_pc[18]} {Aquila_SoC/RISCV_CORE0/dec_pc[19]} {Aquila_SoC/RISCV_CORE0/dec_pc[20]} {Aquila_SoC/RISCV_CORE0/dec_pc[21]} {Aquila_SoC/RISCV_CORE0/dec_pc[22]} {Aquila_SoC/RISCV_CORE0/dec_pc[23]} {Aquila_SoC/RISCV_CORE0/dec_pc[24]} {Aquila_SoC/RISCV_CORE0/dec_pc[25]} {Aquila_SoC/RISCV_CORE0/dec_pc[26]} {Aquila_SoC/RISCV_CORE0/dec_pc[27]} {Aquila_SoC/RISCV_CORE0/dec_pc[28]} {Aquila_SoC/RISCV_CORE0/dec_pc[29]} {Aquila_SoC/RISCV_CORE0/dec_pc[30]} {Aquila_SoC/RISCV_CORE0/dec_pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list Aquila_SoC/RISCV_CORE0/irq_taken ]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/synth_1
+
+launch_runs synth_1 -jobs 6
+[Sun Jan 16 19:03:07 2022] Launched synth_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'Clock_Generator'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'MIG'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.dcp' for cell 'synchronizer/DMEM_addr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.dcp' for cell 'synchronizer/DMEM_done__0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.dcp' for cell 'synchronizer/DMEM_rd_data'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.609 . Memory (MB): peak = 2735.305 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'MIG'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'Clock_Generator/inst'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Finished Parsing XDC File [C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.srcs/constrs_1/imports/xdc/arty.xdc]
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc:60]
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/DMEM_wt_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_data/async_fifo_data_clocks.xdc] for cell 'synchronizer/IMEM_rd_data/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_rw/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/DMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_done__0/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_signal/async_fifo_signal_clocks.xdc] for cell 'synchronizer/IMEM_strobe/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/DMEM_addr/U0'
+Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+Finished Parsing XDC File [c:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.gen/sources_1/ip/async_fifo_addr/async_fifo_addr_clocks.xdc] for cell 'synchronizer/IMEM_addr/U0'
+INFO: [Project 1-1714] 20 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2807.191 ; gain = 106.832
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 2807.191 ; gain = 0.000
+[Sun Jan 16 19:10:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2807.191 ; gain = 0.000
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.1
+  **** Build date : Jun 10 2021 at 20:17:23
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.1
+  ****** Build date   : May 27 2021-01:32:33
+    **** Build number : 2021.1.1622050353
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2807.191 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438C7A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 4453.055 ; gain = 1645.863
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Jan 16 19:27:42 2022] Launched impl_1...
+Run output will be captured here: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Desktop/SD/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Desktop/SD/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+save_wave_config {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 16 19:31:36 2022...

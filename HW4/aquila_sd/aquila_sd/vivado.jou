@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec  9 12:46:21 2021
+# Process ID: 13992
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd
+# Command line: vivado.exe -mode batch -source build.tcl
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW4/aquila_sd/aquila_sd\vivado.jou
+#-----------------------------------------------------------
+source build.tcl

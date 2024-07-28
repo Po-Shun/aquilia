@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2021.1 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7a35t_0" gui_info="dashboard1=hw_ila_1[xc7a35t_0/hw_ila_1/Settings=ILA_SETTINGS_1;xc7a35t_0/hw_ila_1/Status=ILA_STATUS_1;xc7a35t_0/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xc7a35t_0/hw_ila_1/Waveform=ILA_WAVE_1;xc7a35t_0/hw_ila_1/Capture Setup=ILA_CAPTURE_1;]"/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7a35t_0" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/soc_top.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/soc_top.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/soc_top.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_ila" gui_info="">
+    <Object name="" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+    <Object name="u_ila_0" gui_info="">
+      <Properties Property="CONTROL.TRIGGER_CONDITION" value="AND"/>
+      <Properties Property="CORE_REFRESH_RATE_MS" value="500"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="Aquila_SoC/RISCV_CORE0/dec_pc[31:0]" gui_info=""/>
+    <Object name="Aquila_SoC/RISCV_CORE0/irq_taken" gui_info=""/>
+    <Object name="Aquila_SoC/RISCV_CORE0/pcu_pc[31:0]" gui_info="Trigger Setup=0"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe1[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/context_overhead[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/critical_overhead[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe0[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/dec_pc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq1&apos;hX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe7[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;hX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/irq_taken"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;h8000_0294"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;h8000_0294"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/pcu_pc[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead2[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[31:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[31]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[30]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[29]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[28]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[27]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[26]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[25]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[24]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[23]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[22]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[21]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[20]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[19]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[18]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[17]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[16]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[15]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[14]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[13]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[12]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[11]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[10]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[9]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[8]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[7]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[6]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[5]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[4]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[3]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[2]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[1]"/>
+        <net name="Aquila_SoC/RISCV_CORE0/semaphre_overhead[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</hwsession>

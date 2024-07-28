@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan 16 18:54:14 2022
+# Process ID: 29204
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/mig_7series_0_synth_1
+# Command line: vivado.exe -log mig_7series_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mig_7series_0.tcl
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/mig_7series_0_synth_1/mig_7series_0.vds
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/mig_7series_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source mig_7series_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mig_7series_0, cache-ID = 2566cd0228aaec4b.
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 16 18:54:27 2022...

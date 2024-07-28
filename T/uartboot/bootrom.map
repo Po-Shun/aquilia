@@ -1,0 +1,79 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+addr                0x4               uartboot.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+code_ram         0x0000000000000000 0x0000000000000600 xr !rw
+data_ram         0x0000000000000600 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000ff0                __stack_top = 0xff0
+
+.text           0x0000000000000000      0x3e4
+ boot.o(.text)
+ .text          0x0000000000000000       0x24 boot.o
+                0x0000000000000000                boot
+ *(.text)
+ .text          0x0000000000000024        0x0 uartboot.o
+ .text          0x0000000000000024      0x3c0 io_uart.o
+                0x0000000000000024                exit
+                0x0000000000000068                inbyte
+                0x0000000000000090                outbyte
+                0x00000000000000d8                getchar
+                0x00000000000000f0                putchar
+                0x000000000000011c                putd
+                0x00000000000001c4                putx
+                0x0000000000000264                puts
+                0x00000000000002a4                printf
+
+.text.startup   0x00000000000003e4      0x168
+ .text.startup  0x00000000000003e4      0x168 uartboot.o
+                0x00000000000003e4                main
+
+.rela.dyn       0x000000000000054c        0x0
+ .rela.sdata    0x000000000000054c        0x0 boot.o
+ .rela.text.startup
+                0x000000000000054c        0x0 boot.o
+
+.data           0x0000000000000600      0x2a1
+ *(.data)
+ .data          0x0000000000000600        0x0 boot.o
+ .data          0x0000000000000600        0x0 uartboot.o
+ .data          0x0000000000000600        0x0 io_uart.o
+ *(.bss)
+ .bss           0x0000000000000600        0x0 boot.o
+ .bss           0x0000000000000600        0x0 uartboot.o
+ .bss           0x0000000000000600        0x0 io_uart.o
+ *(.rodata*)
+ .rodata.str1.4
+                0x0000000000000600      0x1c4 uartboot.o
+                                        0x1c2 (size before relaxing)
+ .rodata        0x00000000000007c4       0xdd io_uart.o
+LOAD boot.o
+LOAD uartboot.o
+LOAD io_uart.o
+OUTPUT(bootrom.out elf32-littleriscv)
+
+.sdata          0x00000000000008a4       0x10
+ .sdata         0x00000000000008a4        0x4 boot.o
+                0x00000000000008a4                stack_top
+ .sdata         0x00000000000008a8        0xc io_uart.o
+                0x00000000000008a8                uart_status
+                0x00000000000008ac                uart_txfifo
+                0x00000000000008b0                uart_rxfifo
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 boot.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 uartboot.o
+ .comment       0x0000000000000011       0x12 io_uart.o
+
+.bss            0x00000000000008b4        0x4
+ COMMON         0x00000000000008b4        0x4 uartboot.o
+                0x00000000000008b4                addr

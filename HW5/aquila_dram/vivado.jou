@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan 16 18:54:44 2022
+# Process ID: 2568
+# Current directory: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20980 C:\Users\a609071103.cs07\Documents\micro processor\HW5\aquila_dram\aquila_dram.xpr
+# Log file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/vivado.log
+# Journal file: C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.xpr}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken_i*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*irq_taken*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*pc*" ]
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*pc_i*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Aquila_SoC/RISCV_CORE0/dec_pc[0]} {Aquila_SoC/RISCV_CORE0/dec_pc[1]} {Aquila_SoC/RISCV_CORE0/dec_pc[2]} {Aquila_SoC/RISCV_CORE0/dec_pc[3]} {Aquila_SoC/RISCV_CORE0/dec_pc[4]} {Aquila_SoC/RISCV_CORE0/dec_pc[5]} {Aquila_SoC/RISCV_CORE0/dec_pc[6]} {Aquila_SoC/RISCV_CORE0/dec_pc[7]} {Aquila_SoC/RISCV_CORE0/dec_pc[8]} {Aquila_SoC/RISCV_CORE0/dec_pc[9]} {Aquila_SoC/RISCV_CORE0/dec_pc[10]} {Aquila_SoC/RISCV_CORE0/dec_pc[11]} {Aquila_SoC/RISCV_CORE0/dec_pc[12]} {Aquila_SoC/RISCV_CORE0/dec_pc[13]} {Aquila_SoC/RISCV_CORE0/dec_pc[14]} {Aquila_SoC/RISCV_CORE0/dec_pc[15]} {Aquila_SoC/RISCV_CORE0/dec_pc[16]} {Aquila_SoC/RISCV_CORE0/dec_pc[17]} {Aquila_SoC/RISCV_CORE0/dec_pc[18]} {Aquila_SoC/RISCV_CORE0/dec_pc[19]} {Aquila_SoC/RISCV_CORE0/dec_pc[20]} {Aquila_SoC/RISCV_CORE0/dec_pc[21]} {Aquila_SoC/RISCV_CORE0/dec_pc[22]} {Aquila_SoC/RISCV_CORE0/dec_pc[23]} {Aquila_SoC/RISCV_CORE0/dec_pc[24]} {Aquila_SoC/RISCV_CORE0/dec_pc[25]} {Aquila_SoC/RISCV_CORE0/dec_pc[26]} {Aquila_SoC/RISCV_CORE0/dec_pc[27]} {Aquila_SoC/RISCV_CORE0/dec_pc[28]} {Aquila_SoC/RISCV_CORE0/dec_pc[29]} {Aquila_SoC/RISCV_CORE0/dec_pc[30]} {Aquila_SoC/RISCV_CORE0/dec_pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list Aquila_SoC/RISCV_CORE0/irq_taken ]]
+save_constraints
+close_design
+open_run impl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+connect_debug_port u_ila_0/clk [get_nets [list clk_BUFG ]]
+set_property port_width 32 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Aquila_SoC/RISCV_CORE0/dec_pc[0]} {Aquila_SoC/RISCV_CORE0/dec_pc[1]} {Aquila_SoC/RISCV_CORE0/dec_pc[2]} {Aquila_SoC/RISCV_CORE0/dec_pc[3]} {Aquila_SoC/RISCV_CORE0/dec_pc[4]} {Aquila_SoC/RISCV_CORE0/dec_pc[5]} {Aquila_SoC/RISCV_CORE0/dec_pc[6]} {Aquila_SoC/RISCV_CORE0/dec_pc[7]} {Aquila_SoC/RISCV_CORE0/dec_pc[8]} {Aquila_SoC/RISCV_CORE0/dec_pc[9]} {Aquila_SoC/RISCV_CORE0/dec_pc[10]} {Aquila_SoC/RISCV_CORE0/dec_pc[11]} {Aquila_SoC/RISCV_CORE0/dec_pc[12]} {Aquila_SoC/RISCV_CORE0/dec_pc[13]} {Aquila_SoC/RISCV_CORE0/dec_pc[14]} {Aquila_SoC/RISCV_CORE0/dec_pc[15]} {Aquila_SoC/RISCV_CORE0/dec_pc[16]} {Aquila_SoC/RISCV_CORE0/dec_pc[17]} {Aquila_SoC/RISCV_CORE0/dec_pc[18]} {Aquila_SoC/RISCV_CORE0/dec_pc[19]} {Aquila_SoC/RISCV_CORE0/dec_pc[20]} {Aquila_SoC/RISCV_CORE0/dec_pc[21]} {Aquila_SoC/RISCV_CORE0/dec_pc[22]} {Aquila_SoC/RISCV_CORE0/dec_pc[23]} {Aquila_SoC/RISCV_CORE0/dec_pc[24]} {Aquila_SoC/RISCV_CORE0/dec_pc[25]} {Aquila_SoC/RISCV_CORE0/dec_pc[26]} {Aquila_SoC/RISCV_CORE0/dec_pc[27]} {Aquila_SoC/RISCV_CORE0/dec_pc[28]} {Aquila_SoC/RISCV_CORE0/dec_pc[29]} {Aquila_SoC/RISCV_CORE0/dec_pc[30]} {Aquila_SoC/RISCV_CORE0/dec_pc[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list Aquila_SoC/RISCV_CORE0/irq_taken ]]
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.runs/impl_1/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Desktop/SD/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/a609071103.cs07/Desktop/SD/soc_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+save_wave_config {C:/Users/a609071103.cs07/Documents/micro processor/HW5/aquila_dram/aquila_dram.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
